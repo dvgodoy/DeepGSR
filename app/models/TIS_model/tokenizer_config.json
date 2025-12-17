@@ -1,0 +1,1 @@
+{"model_max_length": 200, "padding_side": "right", "tokenizer_class": "PreTrainedTokenizerFast", "cls_token": "[CLS]", "unk_token": "[UNK]"}

@@ -1,0 +1,5 @@
+{
+  "cls_token": "[CLS]",
+  "pad_token": "[PAD]",
+  "unk_token": "[UNK]"
+}

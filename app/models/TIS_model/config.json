@@ -1,0 +1,25 @@
+{
+  "architectures": [
+    "DistilBertForSequenceClassification"
+  ],
+  "d_model": 256,
+  "dim_feedforward": 512,
+  "dropout": 0.1,
+  "model_type": "distilbert",
+  "id2label": {
+      "0": "Negative",
+      "1": "Positive"
+    },
+    "label2id": {
+      "Negative": 0,
+      "Positive": 1
+    },  
+  "n_heads": 4,
+  "num_classes": 2,
+  "num_layers": 4,
+  "seq_len": 200,
+  "torch_dtype": "float32",
+  "transformers_version": "4.45.2",
+  "use_cls_token": true,
+  "vocab_size": 64
+}
