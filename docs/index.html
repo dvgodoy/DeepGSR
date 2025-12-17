@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genomic Signal Classifier</title>
+    <title>Transforming DeepGSR: a light-weight genomic signal classifier</title>
     <style>
         body { font-family: sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
         .container { background: #f4f4f9; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
@@ -20,8 +20,11 @@
 <body>
 
 <div class="container">
-    <h2>🧬 Genomic Signal Transformer</h2>
-    <p>Classify sequences as Positive or Negative using custom DNA models.</p>
+    <h2>🧬 Transforming DeepGSR: a light-weight genomic signal classifier</h2>
+    <p>Classify sequences as Positive or Negative using light-weight Transformer models.</p>
+
+    <p>For PAS (motif AATAAA), sequences must have 606 nucleotides.</p>
+    <p>For TIS (motif ATG), sequences must have 603 nucleotides.</p>
 
     <div class="controls">
         <label for="signalType">Select Signal:</label>
@@ -37,6 +40,8 @@
     
     <div id="status" class="loading" style="display:none;">Loading model...</div>
     <div id="result"></div>
+
+    <p>Transforming DeepGSR is a light-weight model for recognizing genomic regulatory signals, such as polyadenylation sites (PAS) and translation initiation sites (TIS). Our approach significantly reduces model size while maintaining competitive performance. Using trinucleotide tokenization and models with fewer than 2.2 million parameters, we train on PAS and TIS datasets from human, mouse, bovine, and fruit fly. The models achieve accuracies of up to 83.5% for PAS and 93.1% for TIS. Compared to alternative low-capacity models, the Transformer outperforms in precision and recall, offering a practical solution for bioinformatics applications in resource-limited environments.</p>
 </div>
 
 <script type="module">
