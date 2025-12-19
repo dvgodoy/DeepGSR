@@ -137,7 +137,7 @@ let worker = null;
 function initWorker() {
     if (worker) worker.terminate(); // Kill any existing worker
     
-    worker = new Worker('worker.js', { type: 'module' });
+    worker = new Worker('https://dvgodoy.github.io/DeepGSR/worker.js', { type: 'module' });
     //worker = new Worker('worker.js');
 
     worker.onmessage = (e) => {
