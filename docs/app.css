@@ -42,8 +42,9 @@ button:hover { opacity: 0.9; }
 
 /* Result/Progress Boxes */
 .status-box { padding: 1rem; background: #e9ecef; border-radius: 4px; margin-top: 1rem; text-align: center; }
-.result-box { padding: 1.5rem; border-radius: 8px; margin-top: 1rem; animation: fadeIn 0.3s; }
+.result-box { padding: 1.5rem; border-radius: 8px; margin-top: 1rem; animation: fadeIn 0.3s;}
 .help-text { font-size: 0.85rem; color: #666; margin-bottom: 1rem; }
+#result { padding: 0 5px; }
 progress { width: 100%; height: 20px; }
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
